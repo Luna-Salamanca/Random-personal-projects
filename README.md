@@ -39,3 +39,4 @@ Some of these projects might be:
 
 Use at your own risk. Or don't. I'm not your boss.
 
+<img src="Python/Language_Chart/Charts/languages.svg" width="500" alt="Language breakdown chart" />
