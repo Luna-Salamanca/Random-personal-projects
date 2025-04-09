@@ -12,7 +12,7 @@ Every file here is either:
 ---
 
 ## Projects
-
+ 
 | Project | Description |
 |--------|-------------|
 | [placeholder 1](./placeholder1/) | placeholder1. |
