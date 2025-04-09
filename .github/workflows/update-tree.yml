@@ -1,4 +1,4 @@
-name: 🧾 Update Monorepo Tree
+name: Update Monorepo Tree
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         run: |
           git config --global user.name "Monorepo Bot"
           git config --global user.email "bot@lunas-monorepo.dev"
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
+          git remote set-url origin https://x-access-token:$GH_PAT@github.com/${{ github.repository }}
           git add monorepo-tree.txt
           git commit -m " Auto-update monorepo-tree.txt" || echo "No changes"
           git push origin main
