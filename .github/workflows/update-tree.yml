@@ -17,10 +17,13 @@ jobs:
         run: |
           tree -L 2 -I 'node_modules|.git|__pycache__|dist|build|coverage|logs|.venv|env|.turbo|nx-cache' > monorepo-tree.txt
 
-      - name: Commit updated tree file
+      - name: Push changes back to GitHub
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "Monorepo Bot"
           git config --global user.email "bot@lunas-monorepo.dev"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
           git add monorepo-tree.txt
-          git commit -m "Auto-update monorepo-tree.txt" || echo "No changes to commit"
-          git push
+          git commit -m " Auto-update monorepo-tree.txt" || echo "No changes"
+          git push origin main
