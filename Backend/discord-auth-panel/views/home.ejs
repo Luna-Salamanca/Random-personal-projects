@@ -1,0 +1,6 @@
+<% if (user) { %>
+  <h1>Welcome back, <%= user.username %>!</h1>
+  <a href="/admin">Admin Panel</a> | <a href="/settings">Settings</a>
+<% } else { %>
+  <a href="/login" target="_blank" rel="noopener noreferrer">Login with Discord</a>
+<% } %>

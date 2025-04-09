@@ -1,0 +1,9 @@
+<p><strong>Username:</strong> <%= user.username %></p>
+<p><strong>User ID:</strong> <%= user.id %></p>
+
+<h3>Server Roles</h3>
+<div>
+  <% user.roles.forEach(role => { %>
+    <span class="role-badge"><%= role.name %></span>
+  <% }) %>
+</div>

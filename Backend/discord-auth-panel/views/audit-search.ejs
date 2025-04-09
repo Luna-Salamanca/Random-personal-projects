@@ -1,0 +1,16 @@
+<h1>Search Audit Logs</h1>
+<form method="GET" action="/logs/audit/search">
+  <input name="userId" placeholder"User ID" />
+  <input name="route" placeholder"Route"/>
+  <input name="action" placeholder"Action"/>
+  <button type="submit">Search</button>
+</form>
+
+<ul>
+  <% for (const log of logs) { %>
+    <li>
+      [<%= log.timestamp %>] [<%= log.action %>] <%= log.username %> (<%= log.userId %>)
+      <%= log.method %> <%= log.route %> from <%= log.ip %>
+    </li>
+  <% } %>
+</ul>

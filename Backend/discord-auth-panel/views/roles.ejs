@@ -1,0 +1,20 @@
+<h2>All Server Roles</h2>
+<input id="role-filter" placeholder="Filter roles..." style="margin-bottom:1rem;padding:0.4em;width:100%;max-width:300px;">
+<ul id="role-list">
+  <% roles.forEach(role => { %>
+    <li class="role-item">
+      <span class="role-badge" title="<%= role.id %>"><%= role.name %></span>
+    </li>
+  <% }) %>
+</ul>
+
+<script>
+  const input = document.getElementById('role-filter');
+  const items = document.querySelectorAll('.role-item');
+  input.addEventListener('input', () => {
+    const q = input.value.toLowerCase();
+    items.forEach(item => {
+      item.style.display = item.innerText.toLowerCase().includes(q) ? '' : 'none';
+    });
+  });
+</script>
