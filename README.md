@@ -23,7 +23,18 @@ Every file here is either:
 
 ---
 
-## 🛠️ How to Run Stuff
+## How to Run Stuff
 
 Each project has its own folder with instructions. If it doesn't, skill issue.
 
+---
+
+## ⚠️ Disclaimer of Functionality
+
+Some of these projects might be:
+
+- Broken (technically speaking)
+- Untested (emotionally)
+- Or held together by sheer force of will
+
+Use at your own risk. Or don't. I'm not your boss.
