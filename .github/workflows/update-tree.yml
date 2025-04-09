@@ -1,0 +1,26 @@
+name: 🧾 Update Monorepo Tree
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate folder tree
+        run: |
+          tree -L 2 -I 'node_modules|.git|__pycache__|dist|build|coverage|logs|.venv|env|.turbo|nx-cache' > monorepo-tree.txt
+
+      - name: Commit updated tree file
+        run: |
+          git config --global user.name "Monorepo Bot"
+          git config --global user.email "bot@lunas-monorepo.dev"
+          git add monorepo-tree.txt
+          git commit -m "Auto-update monorepo-tree.txt" || echo "No changes to commit"
+          git push
