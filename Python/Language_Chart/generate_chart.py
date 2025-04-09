@@ -103,7 +103,7 @@ ax.text(
 ax.axis('equal')
 plt.tight_layout()
 
-output_dir = "Python/Language_Chart/charts"
+output_dir = "Charts"
 os.makedirs(output_dir, exist_ok=True)
 
 plt.savefig(f"{output_dir}/languages.svg", format="svg", transparent=True)
