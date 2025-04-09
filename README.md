@@ -39,4 +39,19 @@ Some of these projects might be:
 
 Use at your own risk. Or don't. I'm not your boss.
 
-<img src="Python/Language_Chart/Charts/languages.svg" width="500" alt="Language breakdown chart" />
+---
+
+<table>
+  <tr>
+    <td style="width: 50%;">
+      <img src="Python/Language_Chart/Charts/languages.svg" alt="Language Chart" width="100%" />
+    </td>
+    <td style="vertical-align: top; padding-left: 20px;">
+      <h3 style="margin-top: 0;">🧠 Language Breakdown</h3>
+      <p>This chart shows the languages used across my questionable creations.</p>
+      <p>It's updated automatically with every push using a GitHub Action I set up — mostly as an excuse to learn how workflows actually work.</p>
+      <p>Also yes, my avatar is in the middle. You're welcome.</p>
+    </td>
+  </tr>
+</table>
+
