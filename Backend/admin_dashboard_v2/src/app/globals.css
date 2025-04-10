@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 font-sans text-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+}
+
+a {
+  @apply text-indigo-600 hover:text-indigo-800 transition underline-offset-2;
+}
+
+.card {
+  @apply block p-6 rounded-2xl bg-white shadow hover:shadow-lg transition duration-200;
+}
+
+.text-muted {
+  @apply text-sm text-gray-500;
+}

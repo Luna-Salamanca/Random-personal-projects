@@ -1,0 +1,15 @@
+// jsconfig.json
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "module": "esnext",
+    "target": "es2020",
+    "jsx": "preserve"
+  },
+  "include": ["src"]
+}
