@@ -2,13 +2,9 @@
 >
 > This document may not reflect the current state of the live codebase and is not officially affiliated with the NAUR project. Some endpoints or behaviors might be outdated or non-functional. Use this as a general reference — not a guarantee.
 
----
-
 # Admin Dashboard
 
 > A role-locked dashboard built with Next.js, Tailwind CSS.
-
----
 
 ## What It Does
 
