@@ -85,5 +85,9 @@ temp/
 .turbo/
 nx-cache/
 lerna-debug.log
-Python/Language_Chart/Charts/languages.svg
+
+# -------------------------------
+# misc
+# -------------------------------
+Python/Language_Chart/Charts/
 /Ideas
