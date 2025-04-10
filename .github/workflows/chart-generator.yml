@@ -1,8 +1,8 @@
 name: Generate Language Chart
 
 on:
-  push:
-    branches: ["*"]
+  schedule:
+    - cron: '0 0 * * *'  # Every 24h
   workflow_dispatch:
 
 permissions:
@@ -41,6 +41,3 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-
