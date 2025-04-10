@@ -123,7 +123,7 @@ Here’s a quick peek at the main routes:
 | `/api/admin/logs`        | GET    | View structured log events      |
 | `/api/appeals/submit`    | POST   | Submit a ban appeal form        |
 
-> Check out the [Full API Reference](./docs/API%20Reference.md)
+> Check out the [Full API Reference](./doc/API%20Reference.md)
 
 ---
 
