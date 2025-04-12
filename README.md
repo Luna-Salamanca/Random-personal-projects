@@ -44,7 +44,7 @@ Use at your own risk. Or don't. I'm not your boss.
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="Python/Language_Chart/Charts/languages.svg" alt="Language Chart" width="100%" />
+      <img src="Python/Language_Chart/Charts/languages.png" alt="Language Chart" width="100%" />
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <h3 style="margin-top: 0;"> Language Breakdown</h3>
